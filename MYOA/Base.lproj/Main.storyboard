@@ -39,11 +39,17 @@
                                 <rect key="frame" x="0.0" y="520" width="600" height="30"/>
                                 <animations/>
                                 <state key="normal" title="No, I want you to suffer"/>
+                                <connections>
+                                    <segue destination="asM-EP-83K" kind="show" id="Hd1-eT-QLF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiQ-5g-fIR">
                                 <rect key="frame" x="0.0" y="440" width="600" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Here, Charley, relieve yourself with this bone."/>
+                                <connections>
+                                    <segue destination="YMB-pS-yx2" kind="show" id="nlU-Hq-Y5V"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vYG-zp-Qdw">
                                 <rect key="frame" x="20" y="84" width="560" height="336"/>
@@ -98,27 +104,15 @@ Wrapped in a warm blanked, Charley shifts her gaze longingly out the window. The
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4J-QH-3IW">
-                                <rect key="frame" x="0.0" y="520" width="600" height="30"/>
-                                <animations/>
-                                <state key="normal" title="No, I want you to suffer"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWg-si-ndO">
-                                <rect key="frame" x="0.0" y="440" width="600" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Here, Charley, relieve yourself with this bone."/>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-A7-a0O">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-A7-a0O">
                                 <rect key="frame" x="20" y="84" width="560" height="336"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">"I want a real bone. Hard cow bone. My plastic bone leaves me unsatisfied.", Charley sighed. 
+                                        <string key="content">Gravity draws Charley's tears in a steady stream down her cheeks. 
 
-Wrapped in a warm blanked, Charley shifts her gaze longingly out the window. The disparity of the cold day and warm room fogged the glass. Disgusted with the gloomy weather, Charley's attention returned to her bone. 
-
-"My mouth is at war. My teeth urge for expulsion from the gums that birthed them. I'm desperate to relieve their anguish. Please, would you grant me a bone to break my teeth with?"</string>
+"You are a kind soul. Thank you for your compassion."</string>
                                         <attributes>
                                             <font key="NSFont" size="15" name="CourierNewPSMT"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -131,15 +125,9 @@ Wrapped in a warm blanked, Charley shifts her gaze longingly out the window. The
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UsZ-Xb-Mau" firstAttribute="top" secondItem="d4J-QH-3IW" secondAttribute="bottom" constant="50" id="Bsx-VP-scJ"/>
-                            <constraint firstItem="d4J-QH-3IW" firstAttribute="leading" secondItem="lYC-9e-1i3" secondAttribute="leadingMargin" constant="-20" id="JEN-sL-Mz2"/>
-                            <constraint firstItem="d4J-QH-3IW" firstAttribute="top" secondItem="CWg-si-ndO" secondAttribute="bottom" constant="50" id="Txn-a5-XSS"/>
                             <constraint firstItem="dbh-A7-a0O" firstAttribute="leading" secondItem="lYC-9e-1i3" secondAttribute="leadingMargin" id="b7U-QC-YqE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CWg-si-ndO" secondAttribute="trailing" constant="-20" id="d1Q-3c-or8"/>
-                            <constraint firstItem="CWg-si-ndO" firstAttribute="leading" secondItem="lYC-9e-1i3" secondAttribute="leadingMargin" constant="-20" id="fkS-NY-wqv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="d4J-QH-3IW" secondAttribute="trailing" constant="-20" id="g43-U0-XUE"/>
+                            <constraint firstItem="UsZ-Xb-Mau" firstAttribute="top" secondItem="dbh-A7-a0O" secondAttribute="bottom" constant="180" id="hFD-k0-Ygy"/>
                             <constraint firstItem="dbh-A7-a0O" firstAttribute="top" secondItem="0xr-tX-zXC" secondAttribute="bottom" constant="20" id="i0a-ws-afO"/>
-                            <constraint firstItem="CWg-si-ndO" firstAttribute="top" secondItem="dbh-A7-a0O" secondAttribute="bottom" constant="20" id="oqI-xK-XPL"/>
                             <constraint firstItem="dbh-A7-a0O" firstAttribute="trailing" secondItem="lYC-9e-1i3" secondAttribute="trailingMargin" id="r6R-US-cYl"/>
                         </constraints>
                     </view>
@@ -161,27 +149,15 @@ Wrapped in a warm blanked, Charley shifts her gaze longingly out the window. The
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqD-uW-RId">
-                                <rect key="frame" x="0.0" y="520" width="600" height="30"/>
-                                <animations/>
-                                <state key="normal" title="No, I want you to suffer"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxU-Td-KSe">
-                                <rect key="frame" x="0.0" y="440" width="600" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Here, Charley, relieve yourself with this bone."/>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sW-LL-lCC">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sW-LL-lCC">
                                 <rect key="frame" x="20" y="84" width="560" height="336"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">"I want a real bone. Hard cow bone. My plastic bone leaves me unsatisfied.", Charley sighed. 
+                                        <string key="content">Charley stabs her ice cold glare, aimed at your face.
 
-Wrapped in a warm blanked, Charley shifts her gaze longingly out the window. The disparity of the cold day and warm room fogged the glass. Disgusted with the gloomy weather, Charley's attention returned to her bone. 
-
-"My mouth is at war. My teeth urge for expulsion from the gums that birthed them. I'm desperate to relieve their anguish. Please, would you grant me a bone to break my teeth with?"</string>
+She growls, "You're a real asshole".</string>
                                         <attributes>
                                             <font key="NSFont" size="15" name="CourierNewPSMT"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -194,15 +170,9 @@ Wrapped in a warm blanked, Charley shifts her gaze longingly out the window. The
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NxU-Td-KSe" firstAttribute="top" secondItem="6sW-LL-lCC" secondAttribute="bottom" constant="20" id="2sp-PX-UPV"/>
-                            <constraint firstItem="NxU-Td-KSe" firstAttribute="leading" secondItem="I4G-xM-OLB" secondAttribute="leadingMargin" constant="-20" id="7NR-Ii-dIV"/>
-                            <constraint firstItem="nqD-uW-RId" firstAttribute="leading" secondItem="I4G-xM-OLB" secondAttribute="leadingMargin" constant="-20" id="8F6-7K-b2o"/>
-                            <constraint firstItem="j1x-VO-CcK" firstAttribute="top" secondItem="nqD-uW-RId" secondAttribute="bottom" constant="50" id="9C8-aI-YMa"/>
+                            <constraint firstItem="j1x-VO-CcK" firstAttribute="top" secondItem="6sW-LL-lCC" secondAttribute="bottom" constant="180" id="V0g-zw-t3i"/>
                             <constraint firstItem="6sW-LL-lCC" firstAttribute="leading" secondItem="I4G-xM-OLB" secondAttribute="leadingMargin" id="ama-fm-RWu"/>
-                            <constraint firstItem="nqD-uW-RId" firstAttribute="top" secondItem="NxU-Td-KSe" secondAttribute="bottom" constant="50" id="c8D-fb-Ioe"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nqD-uW-RId" secondAttribute="trailing" constant="-20" id="muW-ux-yH2"/>
                             <constraint firstItem="6sW-LL-lCC" firstAttribute="top" secondItem="8Vw-5K-FzI" secondAttribute="bottom" constant="20" id="oU1-yr-EW0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NxU-Td-KSe" secondAttribute="trailing" constant="-20" id="od3-0N-u7g"/>
                             <constraint firstItem="6sW-LL-lCC" firstAttribute="trailing" secondItem="I4G-xM-OLB" secondAttribute="trailingMargin" id="z0f-kl-Bof"/>
                         </constraints>
                     </view>
