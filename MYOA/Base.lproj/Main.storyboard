@@ -104,8 +104,24 @@ Wrapped in a warm blanked, Charley shifts her gaze longingly out the window. The
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PN8-GF-Y5l">
+                                <rect key="frame" x="0.0" y="440" width="600" height="30"/>
+                                <animations/>
+                                <state key="normal" title="You're welcome, Charley"/>
+                                <connections>
+                                    <segue destination="cYv-le-UAn" kind="show" id="W9W-8O-dg3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfD-e4-ubh">
+                                <rect key="frame" x="0.0" y="520" width="600" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Cry and hold Charley in an eternal embrace."/>
+                                <connections>
+                                    <segue destination="lXT-JE-JA0" kind="show" id="yHx-u4-aV9"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-A7-a0O">
-                                <rect key="frame" x="20" y="84" width="560" height="336"/>
+                                <rect key="frame" x="20" y="84" width="560" height="306"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
@@ -125,8 +141,14 @@ Wrapped in a warm blanked, Charley shifts her gaze longingly out the window. The
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="UsZ-Xb-Mau" firstAttribute="top" secondItem="dfD-e4-ubh" secondAttribute="bottom" constant="50" id="2l2-BW-5Uc"/>
+                            <constraint firstItem="PN8-GF-Y5l" firstAttribute="top" secondItem="dbh-A7-a0O" secondAttribute="bottom" constant="50" id="5S7-1N-Efy"/>
+                            <constraint firstItem="dfD-e4-ubh" firstAttribute="top" secondItem="PN8-GF-Y5l" secondAttribute="bottom" constant="50" id="ANK-xQ-c42"/>
+                            <constraint firstItem="dfD-e4-ubh" firstAttribute="leading" secondItem="lYC-9e-1i3" secondAttribute="leadingMargin" constant="-20" id="Ane-iV-V6l"/>
+                            <constraint firstItem="PN8-GF-Y5l" firstAttribute="leading" secondItem="lYC-9e-1i3" secondAttribute="leadingMargin" constant="-20" id="Bh0-Rt-nUc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PN8-GF-Y5l" secondAttribute="trailing" constant="-20" id="GLO-k9-aRn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dfD-e4-ubh" secondAttribute="trailing" constant="-20" id="ZyS-oq-b1l"/>
                             <constraint firstItem="dbh-A7-a0O" firstAttribute="leading" secondItem="lYC-9e-1i3" secondAttribute="leadingMargin" id="b7U-QC-YqE"/>
-                            <constraint firstItem="UsZ-Xb-Mau" firstAttribute="top" secondItem="dbh-A7-a0O" secondAttribute="bottom" constant="180" id="hFD-k0-Ygy"/>
                             <constraint firstItem="dbh-A7-a0O" firstAttribute="top" secondItem="0xr-tX-zXC" secondAttribute="bottom" constant="20" id="i0a-ws-afO"/>
                             <constraint firstItem="dbh-A7-a0O" firstAttribute="trailing" secondItem="lYC-9e-1i3" secondAttribute="trailingMargin" id="r6R-US-cYl"/>
                         </constraints>
@@ -135,7 +157,7 @@ Wrapped in a warm blanked, Charley shifts her gaze longingly out the window. The
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PcU-3d-Fga" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="530" y="-124"/>
+            <point key="canvasLocation" x="1401" y="94"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CUw-Ux-az4">
@@ -150,7 +172,7 @@ Wrapped in a warm blanked, Charley shifts her gaze longingly out the window. The
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sW-LL-lCC">
-                                <rect key="frame" x="20" y="84" width="560" height="336"/>
+                                <rect key="frame" x="20" y="84" width="560" height="306"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
@@ -166,13 +188,35 @@ She growls, "You're a real asshole".</string>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvM-uZ-M2I">
+                                <rect key="frame" x="0.0" y="520" width="600" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Kick Charley"/>
+                                <connections>
+                                    <segue destination="fcX-Jg-h3o" kind="show" id="e2X-6y-TXW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdK-F9-OhN">
+                                <rect key="frame" x="0.0" y="440" width="600" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Have a change of heart. Give charley a bone."/>
+                                <connections>
+                                    <segue destination="YMB-pS-yx2" kind="show" id="qwN-Qj-EFV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="j1x-VO-CcK" firstAttribute="top" secondItem="6sW-LL-lCC" secondAttribute="bottom" constant="180" id="V0g-zw-t3i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RvM-uZ-M2I" secondAttribute="trailing" constant="-20" id="5AV-2W-nkx"/>
+                            <constraint firstItem="BdK-F9-OhN" firstAttribute="top" secondItem="6sW-LL-lCC" secondAttribute="bottom" constant="50" id="A97-wo-2CT"/>
+                            <constraint firstItem="RvM-uZ-M2I" firstAttribute="leading" secondItem="I4G-xM-OLB" secondAttribute="leadingMargin" constant="-20" id="VSL-Xp-XgZ"/>
+                            <constraint firstItem="j1x-VO-CcK" firstAttribute="top" secondItem="RvM-uZ-M2I" secondAttribute="bottom" constant="50" id="YQ9-Rn-P01"/>
                             <constraint firstItem="6sW-LL-lCC" firstAttribute="leading" secondItem="I4G-xM-OLB" secondAttribute="leadingMargin" id="ama-fm-RWu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BdK-F9-OhN" secondAttribute="trailing" constant="-20" id="ete-Ax-lCR"/>
+                            <constraint firstItem="RvM-uZ-M2I" firstAttribute="top" secondItem="BdK-F9-OhN" secondAttribute="bottom" constant="50" id="l62-JT-PoY"/>
                             <constraint firstItem="6sW-LL-lCC" firstAttribute="top" secondItem="8Vw-5K-FzI" secondAttribute="bottom" constant="20" id="oU1-yr-EW0"/>
+                            <constraint firstItem="BdK-F9-OhN" firstAttribute="leading" secondItem="I4G-xM-OLB" secondAttribute="leadingMargin" constant="-20" id="rzc-Dw-fsg"/>
                             <constraint firstItem="6sW-LL-lCC" firstAttribute="trailing" secondItem="I4G-xM-OLB" secondAttribute="trailingMargin" id="z0f-kl-Bof"/>
                         </constraints>
                     </view>
@@ -180,7 +224,139 @@ She growls, "You're a real asshole".</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GeD-F1-aKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="542" y="628"/>
+            <point key="canvasLocation" x="618" y="676"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tpS-j0-rnX">
+            <objects>
+                <viewController id="fcX-Jg-h3o" customClass="ViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vV9-cf-Ma1"/>
+                        <viewControllerLayoutGuide type="bottom" id="NnP-bF-3dc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aZc-l2-UxY" customClass="View">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3wy-zD-Tsn">
+                                <rect key="frame" x="20" y="84" width="560" height="306"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="You have no heart.">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="CourierNewPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NnP-bF-3dc" firstAttribute="top" secondItem="3wy-zD-Tsn" secondAttribute="bottom" constant="210" id="hXg-lc-vgE"/>
+                            <constraint firstItem="3wy-zD-Tsn" firstAttribute="leading" secondItem="aZc-l2-UxY" secondAttribute="leadingMargin" id="q75-qO-5Ou"/>
+                            <constraint firstItem="3wy-zD-Tsn" firstAttribute="top" secondItem="vV9-cf-Ma1" secondAttribute="bottom" constant="20" id="tlM-vI-5kS"/>
+                            <constraint firstItem="3wy-zD-Tsn" firstAttribute="trailing" secondItem="aZc-l2-UxY" secondAttribute="trailingMargin" id="yBG-ik-7Vy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="w7K-Bh-rXr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8W-yC-tnQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2317" y="1656"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="m8p-h6-FpS">
+            <objects>
+                <viewController id="cYv-le-UAn" customClass="ViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZZT-ax-S6x"/>
+                        <viewControllerLayoutGuide type="bottom" id="FgN-0d-v4g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sIY-kx-Hja">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcQ-Qy-WSi">
+                                <rect key="frame" x="20" y="84" width="560" height="306"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="You have a good heart.">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="CourierNewPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jcQ-Qy-WSi" firstAttribute="trailing" secondItem="sIY-kx-Hja" secondAttribute="trailingMargin" id="Q4R-Fe-TCA"/>
+                            <constraint firstItem="FgN-0d-v4g" firstAttribute="top" secondItem="jcQ-Qy-WSi" secondAttribute="bottom" constant="210" id="dS4-K7-3jM"/>
+                            <constraint firstItem="jcQ-Qy-WSi" firstAttribute="top" secondItem="ZZT-ax-S6x" secondAttribute="bottom" constant="20" id="iMb-kj-qb0"/>
+                            <constraint firstItem="jcQ-Qy-WSi" firstAttribute="leading" secondItem="sIY-kx-Hja" secondAttribute="leadingMargin" id="nM9-Wu-eQp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5uP-3N-oKT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ix-Hy-TOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2317" y="94"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Cw3-8T-5zq">
+            <objects>
+                <viewController id="lXT-JE-JA0" customClass="ViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JYs-tv-soZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="1QC-US-NjT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bck-mj-5oc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m7T-2s-xbt">
+                                <rect key="frame" x="20" y="84" width="560" height="306"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Congratulations. The universe has granted you one wish. 
+
+Use it wisely.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="CourierNewPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1QC-US-NjT" firstAttribute="top" secondItem="m7T-2s-xbt" secondAttribute="bottom" constant="210" id="8VH-z6-CVV"/>
+                            <constraint firstItem="m7T-2s-xbt" firstAttribute="leading" secondItem="Bck-mj-5oc" secondAttribute="leadingMargin" id="Xi9-Wg-lMh"/>
+                            <constraint firstItem="m7T-2s-xbt" firstAttribute="trailing" secondItem="Bck-mj-5oc" secondAttribute="trailingMargin" id="pDd-8E-UCf"/>
+                            <constraint firstItem="m7T-2s-xbt" firstAttribute="top" secondItem="JYs-tv-soZ" secondAttribute="bottom" constant="20" id="rlT-CQ-oCo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8OR-4r-526"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Prb-PC-KTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2317" y="876"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qwN-Qj-EFV"/>
+    </inferredMetricsTieBreakers>
 </document>
