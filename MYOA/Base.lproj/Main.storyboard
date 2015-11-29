@@ -26,7 +26,7 @@
         <!--View Controller-->
         <scene sceneID="19O-23-l8c">
             <objects>
-                <viewController id="CZE-MG-428" customClass="ViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CZE-MG-428" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PcK-f5-0I2"/>
                         <viewControllerLayoutGuide type="bottom" id="MhE-Jg-1ib"/>
