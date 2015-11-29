@@ -45,16 +45,34 @@
                                 <animations/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vYG-zp-Qdw">
+                                <rect key="frame" x="20" y="84" width="560" height="284"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="CourierNewPSMT"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vYG-zp-Qdw" firstAttribute="trailing" secondItem="ESU-HG-qhy" secondAttribute="trailingMargin" id="4gv-7y-DdX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IVD-Hg-xPi" secondAttribute="trailing" constant="-20" id="9g6-6l-cYO"/>
                             <constraint firstItem="IVD-Hg-xPi" firstAttribute="leading" secondItem="ESU-HG-qhy" secondAttribute="leadingMargin" constant="-20" id="L5X-sh-TOd"/>
                             <constraint firstItem="IVD-Hg-xPi" firstAttribute="top" secondItem="CiQ-5g-fIR" secondAttribute="bottom" constant="50" id="MbH-mX-Non"/>
+                            <constraint firstItem="CiQ-5g-fIR" firstAttribute="top" secondItem="vYG-zp-Qdw" secondAttribute="bottom" constant="72" id="ZVA-PW-eKL"/>
                             <constraint firstItem="CiQ-5g-fIR" firstAttribute="leading" secondItem="ESU-HG-qhy" secondAttribute="leadingMargin" constant="-20" id="dJH-wh-8xm"/>
                             <constraint firstItem="MhE-Jg-1ib" firstAttribute="top" secondItem="IVD-Hg-xPi" secondAttribute="bottom" constant="50" id="feO-nH-ytl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CiQ-5g-fIR" secondAttribute="trailing" constant="-20" id="iF7-1V-dng"/>
+                            <constraint firstItem="vYG-zp-Qdw" firstAttribute="leading" secondItem="ESU-HG-qhy" secondAttribute="leadingMargin" id="liJ-PX-Ftt"/>
+                            <constraint firstItem="vYG-zp-Qdw" firstAttribute="top" secondItem="PcK-f5-0I2" secondAttribute="bottom" constant="20" id="oN9-iY-YNz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="56p-UL-nDw"/>
