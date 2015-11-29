@@ -26,7 +26,7 @@
         <!--View Controller-->
         <scene sceneID="19O-23-l8c">
             <objects>
-                <viewController id="CZE-MG-428" sceneMemberID="viewController">
+                <viewController id="CZE-MG-428" customClass="ViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PcK-f5-0I2"/>
                         <viewControllerLayoutGuide type="bottom" id="MhE-Jg-1ib"/>
@@ -95,7 +95,7 @@ Wrapped in a warm blanked, Charley shifts her gaze longingly out the window. The
         <!--View Controller-->
         <scene sceneID="nfx-GI-nPw">
             <objects>
-                <viewController id="YMB-pS-yx2" sceneMemberID="viewController">
+                <viewController id="YMB-pS-yx2" customClass="ViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0xr-tX-zXC"/>
                         <viewControllerLayoutGuide type="bottom" id="UsZ-Xb-Mau"/>
@@ -140,7 +140,7 @@ Wrapped in a warm blanked, Charley shifts her gaze longingly out the window. The
         <!--View Controller-->
         <scene sceneID="CUw-Ux-az4">
             <objects>
-                <viewController id="asM-EP-83K" sceneMemberID="viewController">
+                <viewController id="asM-EP-83K" customClass="ViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Vw-5K-FzI"/>
                         <viewControllerLayoutGuide type="bottom" id="j1x-VO-CcK"/>
